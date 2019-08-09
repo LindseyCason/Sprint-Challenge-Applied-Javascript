@@ -301,5 +301,12 @@ body {
 }
 .carousel img {
   width: 100%;
+  /* display: inline-block; */
+}
+
+.show{
+  display: inline-block;
+}
+.hide{
   display: none;
 }

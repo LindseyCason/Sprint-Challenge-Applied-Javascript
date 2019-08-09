@@ -31,9 +31,11 @@ let headlines = [];
  
 axios.get("https://lambda-times-backend.herokuapp.com/articles")
 .then(response=>{ 
- let art = response.data.articles
- console.log(response); //Obj
- console.log(art); //Obj containing 4 topic arrays, each array containing all 3 items needed //LOOP THIS
+ let art = response.data.articles;
+ console.log(response);
+ //Obj
+ console.log(art);
+ //Obj containing 4 topic arrays, each array containing all 3 items needed //LOOP THIS
  globalTopic.forEach(topic =>{ //globalTopic is an array created on the header page//using here to save space
        let topicArr = art[topic]; //might not need this variable but makes it easier to read for me
        for(let i=0; i<topicArr.length; i++){
